@@ -10,7 +10,7 @@ window.addEventListener('load',() => {
     setTimeout(() => {
         conteiner.classList.remove('conteiner')
         conteiner.classList.add('x')
-    },7000)//cuanto tardara en desapareser el loader para que nos deje ocupar la página
+    },7000)//cuanto tardara en desaparecer el loader para que nos deje ocupar la página
 })
 
 //encerramos las imagenes en string.
