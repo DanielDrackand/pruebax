@@ -14,7 +14,7 @@ window.addEventListener('load',() => {
     loaderAnimation();
     //img
     getsHtml.planet.innerHTML = '<img src=" ' + imgs[0] + '">';
-    getsHtml.Nombre_planeta.innerHTML = '<p> Tierra </p>';   
+    getsHtml.name_planet.innerHTML = '<p> Tierra </p>';   
     //btons
     getsHtml.btnNext.addEventListener('click',next)
     getsHtml.btnBack.addEventListener('click',back)

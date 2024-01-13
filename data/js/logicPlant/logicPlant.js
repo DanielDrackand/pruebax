@@ -4,33 +4,29 @@ import {getsHtml,imgs} from './../getHtml/getsHtml.js';
 //usamos 'x' para saber que img de planeta mostrar
 function namePlanet(){
         switch(getsHtml.x){
-            case 0  :   
-            getsHtml.Nombre_planeta.innerHTML = '<p> Tierra </p>';
+            case 0:   
+                 getsHtml.name_planet.innerHTML = '<p> Tierra </p>';
             break;
-            case 1  :    
-                getsHtml.Nombre_planeta.innerHTML = '<p> Mercurio </p>';
+            case 1:    
+                getsHtml.name_planet.innerHTML = '<p> Mercurio </p>';
             break;   
-            case 2  :
-                getsHtml.Nombre_planeta.innerHTML = '<p> Venus </p>';
+            case 2:
+                getsHtml.name_planet.innerHTML = '<p> Venus </p>';
             break;
-            case 3  :
-                getsHtml.Nombre_planeta.innerHTML = '<p> Júpiter </p>';
+            case 3:
+                getsHtml.name_planet.innerHTML = '<p> Júpiter </p>';
             break;
-
-            case 4  :
-                getsHtml.Nombre_planeta.innerHTML = '<p> Marte </p>';
+            case 4:
+                getsHtml.name_planet.innerHTML = '<p> Marte </p>';
             break;
-            case 5  :
-            
-            getsHtml.Nombre_planeta.innerHTML = '<p> Saturno </p>';
+            case 5:
+                getsHtml.name_planet.innerHTML = '<p> Saturno </p>';
             break;
-            case 6  :
-            
-            getsHtml.Nombre_planeta.innerHTML = '<p> Urano </p>';
+            case 6:
+                getsHtml.name_planet.innerHTML = '<p> Urano </p>';
             break;
-            
-            case 7 :  
-            getsHtml.Nombre_planeta.innerHTML = '<p> Neptuno </p>';
+            case 7:  
+                getsHtml.name_planet.innerHTML = '<p> Neptuno </p>';
             break;            
     }       
 }

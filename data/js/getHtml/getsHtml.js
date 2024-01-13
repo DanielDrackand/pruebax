@@ -2,13 +2,13 @@
 const getsHtml = {
     x: 0,//Nos ayuda a saber en que imagen estamos
     conteiner: document.querySelector('.conteiner'),
-    planet: document.querySelector('.planetas'),
+    planet: document.getElementById('planet'),
     pesoUsuario: document.querySelector('.peso_usuario'),
     calcular: document.querySelector('.calcular'),
     result: document.querySelector('.resultado'),
     btnBack: document.querySelector('.atras'),
     btnNext: document.querySelector('.adelante'),
-    Nombre_planeta: document.querySelector(".Nombre_planeta")
+    name_planet: document.getElementById("name_planet")
 
 }
 //imgs of planet
