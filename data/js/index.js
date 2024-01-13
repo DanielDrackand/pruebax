@@ -4,17 +4,14 @@
 //gets
 import {getsHtml,imgs} from './getHtml/getsHtml.js';
 //lógica del funciones y btons
-import {namePlanet,next,back,calculo,resultHide} from './logicPlant/logicPlant.js';
+import {namePlanet,next,back,calculo} from './logicPlant/logicPlant.js';
+//animaciones 
+import {loaderAnimation,resultHide} from './effect/effect.js';
+
 //loader
 window.addEventListener('load',() => {
-    setTimeout(()=>{
-        getsHtml.conteiner.style.opacity = 0; 
-        getsHtml.conteiner.style.opacity = 0;
-    },4000)//duración del transition
-    setTimeout(() => {
-        getsHtml.conteiner.classList.remove('conteiner')
-        getsHtml.conteiner.remove();
-    },7000)//cuanto tardara en desaparecer el loader para que nos deje ocupar la página
+    //animacion loader
+    loaderAnimation();
     //img
     getsHtml.planet.innerHTML = '<img src=" ' + imgs[0] + '">';
     getsHtml.Nombre_planeta.innerHTML = '<p> Tierra </p>';   

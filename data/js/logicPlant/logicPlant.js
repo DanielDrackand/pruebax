@@ -7,19 +7,14 @@ function namePlanet(){
             case 0  :   
             getsHtml.Nombre_planeta.innerHTML = '<p> Tierra </p>';
             break;
-        
-            case 1  :
-            
-            getsHtml.Nombre_planeta.innerHTML = '<p> Mercurio </p>';
-            break;
-    
+            case 1  :    
+                getsHtml.Nombre_planeta.innerHTML = '<p> Mercurio </p>';
+            break;   
             case 2  :
-            
-            getsHtml.Nombre_planeta.innerHTML = '<p> Venus </p>';
+                getsHtml.Nombre_planeta.innerHTML = '<p> Venus </p>';
             break;
             case 3  :
-            
-            getsHtml.Nombre_planeta.innerHTML = '<p> Júpiter </p>';
+                getsHtml.Nombre_planeta.innerHTML = '<p> Júpiter </p>';
             break;
 
             case 4  :
@@ -90,13 +85,7 @@ function calculo(){
     }
 }
 
-
-function resultHide(){
-        getsHtml.result.innerHTML= "";
-    }
-    setInterval(resultHide,6000);
-
-export { namePlanet, next, back, calculo, resultHide};
+export { namePlanet, next, back, calculo};
 
 
 
