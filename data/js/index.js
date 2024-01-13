@@ -9,11 +9,11 @@ import {namePlanet,next,back,calculo,resultHide} from './logicPlant/logicPlant.j
 window.addEventListener('load',() => {
     setTimeout(()=>{
         getsHtml.conteiner.style.opacity = 0; 
-        getsHtml.conteiner.style.opacity = 'hide';
+        getsHtml.conteiner.style.opacity = 0;
     },4000)//duración del transition
     setTimeout(() => {
         getsHtml.conteiner.classList.remove('conteiner')
-        getsHtml.conteiner.classList.add('x')
+        getsHtml.conteiner.remove();
     },7000)//cuanto tardara en desaparecer el loader para que nos deje ocupar la página
     //img
     getsHtml.planet.innerHTML = '<img src=" ' + imgs[0] + '">';

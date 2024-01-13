@@ -53,16 +53,12 @@
         opacity: 0;
     }
 }
-/*x*/
-.x{
-    height: 0px;
-}
-/* header*/
+/* -----------code ------------------*/
 
 body{
     background-color: black;
 }
-
+/*Main*/
 h1 {
     font-size: 250%;
     color: white ;
@@ -72,9 +68,7 @@ h3{
     font-size: 100%;
     color: white ;
     text-align: center;
-    margin-top: 5% ;
 }
-/*main*/
 .planetas{
  display: flex;
  justify-content: center;
