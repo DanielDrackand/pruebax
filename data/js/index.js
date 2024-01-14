@@ -14,11 +14,11 @@ window.addEventListener('load',() => {
     loaderAnimation();
     //img
     getsHtml.planet.innerHTML = '<img src=" ' + imgs[0] + '">';
-       
+    namePlanet(getsHtml.x);       
     //btons
     getsHtml.btnNext.addEventListener('click',next)
     getsHtml.btnBack.addEventListener('click',back)
     getsHtml.calcular.addEventListener('click',calculo) 
 
 })
-namePlanet(getsHtml.x);
+

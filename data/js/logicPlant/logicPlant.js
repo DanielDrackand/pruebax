@@ -5,7 +5,6 @@ import {getsHtml,imgs, namePlan} from './../getHtml/getsHtml.js';
 //se pude solucionar con un array de planetas
 function namePlanet(x){
     getsHtml.name_planet.innerHTML = '<p>' + namePlan[x] +'<p>';
-    console.log(x)
 }
 ////funciones de bts
 function next(){
