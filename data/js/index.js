@@ -2,7 +2,7 @@
 "use strict";
 //importaciones
 //gets
-import {getsHtml,imgs} from './getHtml/getsHtml.js';
+import {getsHtml,imgs,namePlan} from './getHtml/getsHtml.js';
 //lógica del funciones y btons
 import {namePlanet,next,back,calculo} from './logicPlant/logicPlant.js';
 //animaciones 
@@ -14,11 +14,11 @@ window.addEventListener('load',() => {
     loaderAnimation();
     //img
     getsHtml.planet.innerHTML = '<img src=" ' + imgs[0] + '">';
-    getsHtml.name_planet.innerHTML = '<p> Tierra </p>';   
+       
     //btons
     getsHtml.btnNext.addEventListener('click',next)
     getsHtml.btnBack.addEventListener('click',back)
     getsHtml.calcular.addEventListener('click',calculo) 
 
 })
-
+namePlanet(getsHtml.x);

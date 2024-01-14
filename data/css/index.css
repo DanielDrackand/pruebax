@@ -1,58 +1,40 @@
 /*login*/
+.tenor-gif-embed{
+    width:500px;
+    height:500px;
+}
 .conteiner{
-    margin: -1%;
+    padding-top:25%;
+    padding-left:48%;
     width: 100vw;
     height: 100vh;
-    top: 0%;
     padding-bottom: 100%;
     z-index: 9999;
     position:fixed;
-    transition: all 3s;
+    transition: all 1s;
     background-color: black;
-    text-align: center;
-    padding-top: 10%;
+    color:white;    
 }
-.loader{
-    margin-left: 0% ;
-    animation: loader 2s;
-    color: white;
-    font-size: 200% ;
+.cargando{
+    padding-right:100%;
 }
-.loader_dos{
-    animation: loader_dos 3s;
-    transition: all 5s;
-    margin-left:5% ;
-    color: white;
-    font-size: 150% ;
-}
-.loader_tres{
-    animation: loader_tres 4s;
-    transition: all 5s;
-    margin-left:10% ;
-    color: white;
-}
-/*animaicones loader*/
-@keyframes loader {
-    0%,
-    10%{
-        margin-left: 30%;
-        opacity: 0;
-    }
-}
-@keyframes loader_dos {
-    0%,
-    70%{
-        margin-left: -10px;
-        opacity: 0;
-    }
-}
-@keyframes loader_tres {
-    0%,
-    90%{
-        margin-left: -10px;
-        opacity: 0;
-    }
-}
+ #loader-container {
+            text-align: center;
+        }
+
+        #loader {
+            border: 8px solid rgba(255, 255, 255, 0.3);
+            border-top: 8px solid #00BFFF;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
 /* -----------code ------------------*/
 
 body{
@@ -73,7 +55,7 @@ h3{
  display: flex;
  justify-content: center;
  transition: all 2s;
-} 
+}
 img{
     display: block;
     border-radius: 100%;

@@ -13,5 +13,7 @@ const getsHtml = {
 }
 //imgs of planet
 const imgs = ['data/img/tierra.jpeg','data/img/mercurio.jpeg','data/img/venus.jpeg','data/img/jupiter.jpeg','data/img/marte.jpeg','data/img/saturno.jpeg','data/img/urano.jpeg','data/img/neptuno.jpeg',]
-
-export {getsHtml,imgs}
+//Planets
+const namePlan = [ 'Tierra','Mercurio','Venus','Júpiter','Marte','Saturno','Urano','Neptuno'
+]
+export {getsHtml,imgs,namePlan}

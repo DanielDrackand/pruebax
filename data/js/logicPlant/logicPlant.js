@@ -1,49 +1,25 @@
 //getHtml lo necesitamos para cosas concretas
-import {getsHtml,imgs} from './../getHtml/getsHtml.js';
+import {getsHtml,imgs, namePlan} from './../getHtml/getsHtml.js';
 
 //usamos 'x' para saber que img de planeta mostrar
-function namePlanet(){
-        switch(getsHtml.x){
-            case 0:   
-                 getsHtml.name_planet.innerHTML = '<p> Tierra </p>';
-            break;
-            case 1:    
-                getsHtml.name_planet.innerHTML = '<p> Mercurio </p>';
-            break;   
-            case 2:
-                getsHtml.name_planet.innerHTML = '<p> Venus </p>';
-            break;
-            case 3:
-                getsHtml.name_planet.innerHTML = '<p> Júpiter </p>';
-            break;
-            case 4:
-                getsHtml.name_planet.innerHTML = '<p> Marte </p>';
-            break;
-            case 5:
-                getsHtml.name_planet.innerHTML = '<p> Saturno </p>';
-            break;
-            case 6:
-                getsHtml.name_planet.innerHTML = '<p> Urano </p>';
-            break;
-            case 7:  
-                getsHtml.name_planet.innerHTML = '<p> Neptuno </p>';
-            break;            
-    }       
+//se pude solucionar con un array de planetas
+function namePlanet(x){
+    getsHtml.name_planet.innerHTML = '<p>' + namePlan[x] +'<p>';
+    console.log(x)
 }
-
-//funciones de bts
+////funciones de bts
 function next(){
     if(getsHtml.x < 7 ){
         getsHtml.x++
         getsHtml.planet.innerHTML = '<img src=" ' + imgs[getsHtml.x] + '">';
-        namePlanet()
+        namePlanet(getsHtml.x)
     }
 }
 function back(){
     if(getsHtml.x > 0 ){
         getsHtml.x--
         getsHtml.planet.innerHTML = '<img src=" ' + imgs[getsHtml.x] + '">';
-        namePlanet()
+        namePlanet(getsHtml.x)
     }
 }
 //calculo 
