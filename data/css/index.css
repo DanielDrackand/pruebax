@@ -1,12 +1,8 @@
 /*login*/
-.tenor-gif-embed{
-    width:500px;
-    height:500px;
-}
 .conteiner{
     padding-top:25%;
-    padding-left:48%;
-    width: 100vw;
+    padding-left:34%;
+    width: 100%;/*arreglar no lleva % */
     height: 100vh;
     padding-bottom: 100%;
     z-index: 9999;
@@ -16,25 +12,28 @@
     color:white;    
 }
 .cargando{
-    padding-right:100%;
+    padding-left:-100%;
+    width:100%;
+    font-size:2rem;
 }
- #loader-container {
-            text-align: center;
-        }
-
-        #loader {
-            border: 8px solid rgba(255, 255, 255, 0.3);
-            border-top: 8px solid #00BFFF;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            animation: spin 1s linear infinite;
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
+.imgLoad{
+    margin-top:2%;
+    margin-left:8%;
+    width:100px;
+    height:100px;
+    position: absolute;
+    top: 0;
+    transform: translateX(-5%);
+    animation: animacionDescenso 1s linear infinite;
+}
+@keyframes animacionDescenso {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: calc(5% - 10px); /* Ajusta el valor según la altura de la imagen */
+    }
+}
 /* -----------code ------------------*/
 
 body {

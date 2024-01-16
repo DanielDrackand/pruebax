@@ -8,6 +8,12 @@
 import {getsHtml} from '.././getHtml/getsHtml.js';
 
 function loaderAnimation(){
+        let imgElement = document.createElement('img');
+        let url = ['data/img/alien.png','data/img/mar.png'];
+        let im = Math.floor(Math.random()*2)
+        imgElement.src = url[im];
+        imgElement.classList.add('imgLoad');
+       getsHtml.conteiner.appendChild(imgElement)
     setTimeout(()=>{
         getsHtml.conteiner.style.opacity = 1; 
         getsHtml.conteiner.style.opacity = 0;
