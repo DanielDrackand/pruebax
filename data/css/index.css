@@ -43,7 +43,6 @@ body {
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center center; /* Centra la imagen en el fondo */
     background-attachment: fixed; /* Fija la imagen de fondo mientras se desplaza la página */
-    /* Puedes ajustar estos valores según tus preferencias */
     transition:all 9s;
     animation: fadeIn 9s ease-in-out forwards;
 }
