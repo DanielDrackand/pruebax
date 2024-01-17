@@ -13,8 +13,10 @@
     <link href="data/css/index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="conteiner">
-        <div class="cargando"><p>¿ Sabias que los aliens existen ?</p></div>
+    <div class="conteiner">        
+        <div class="loader-wrapper">
+             <div class="loader"></div>
+        </div>
     </div>
     <header>
         <div id="planet"></div>
@@ -27,13 +29,24 @@
             </div>
         <form class="data">
             <h1>¿ Qué peso tendrías en cada planeta ?</h1>
+            <div class="resultado"></div>
             <input type="text" placeholder="peso usuario" class="peso_usuario" maxlength="3">
             <br>
             <br> 
-            <div class="resultado"></div>
             <button type="button"class="calcular">calcular</button>
          </form>
     </header>
+    <main>
+        <!--add gif-->
+        <div class="gif"></div>
+        <section>
+            <h2>¿ Quierés saber más ?</h2>
+            <p>Dato random de ovnis:</p>
+            <div class="random-data"></div>
+            <!--open ia-->
+            <button type="button" class="new-date">generar</button>
+        </section>
+    </main>
     <!--Datos con chat gtp--->
     <script src="data/js/index.js" type="module"></script>
 </body>

@@ -30,7 +30,6 @@ function calculo(){
         getsHtml.result.innerHTML = "<p> Tu peso en el planeta " + namePlan[getsHtml.x] + " sería: "+parseFloat(cal.toFixed(2))+" kg </p>";
     }
 }
-
 export { namePlanet, next, back, calculo};
 
 
