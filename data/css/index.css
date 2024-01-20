@@ -1,7 +1,25 @@
+/* -----------code ------------------*/
+
+body {
+    background:black;
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen en el fondo */
+    background-attachment: fixed; /* Fija la imagen de fondo mientras se desplaza la página */
+    transition:all 9s;
+    animation: fadeIn 2s ease-in-out forwards;
+    margin:0;
+}
+@keyframes fadeIn {
+    0% {
+        background: black;
+    }
+    100% {
+        background-image: url('../img/fondo.jpg'); /* Nueva imagen de fondo */
+    }
+}
 /*login*/
 .conteiner{
-    padding-top:25%;
-    padding-left:34%;
     width: 100%;/*arreglar no lleva % */
     height: 100vh;
     padding-bottom: 100%;
@@ -10,11 +28,6 @@
     transition: all 1s;
     background-color: black;
     color:white;    
-}
-.cargando{
-    padding-left:-100%;
-    width:100%;
-    font-size:2rem;
 }
 .loader-wrapper {
     position: fixed;
@@ -41,9 +54,10 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+/*ovni arriba del loade*/
 .imgLoad{
-    margin-top:2%;
-    margin-left:8%;
+    margin-top:4%;
+    margin-left:47%;
     width:100px;
     height:100px;
     position: absolute;
@@ -59,28 +73,19 @@
         top: calc(5% - 10px); /* Ajusta el valor según la altura de la imagen */
     }
 }
-/* -----------code ------------------*/
+/*Toas*/
+.toast{
+      position: fixed;
+      top:5%;
+      right: 10px;
+      display:block; /* Ancho del div, ajusta según tus necesidades */
+      background-color: #f0f0f0; /* Color de fondo, ajusta según tus necesidades */
+}
 
-body {
-    background:black;
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center center; /* Centra la imagen en el fondo */
-    background-attachment: fixed; /* Fija la imagen de fondo mientras se desplaza la página */
-    transition:all 9s;
-    animation: fadeIn 9s ease-in-out forwards;
-    margin:0;
-}
-@keyframes fadeIn {
-    0% {
-        background: black;
-    }
-    100% {
-        background-image: url('../img/fondo.jpg'); /* Nueva imagen de fondo */
-    }
-}
-/*Main*/
+/*header*/
 h1 {
+    padding:1%;
+    margin:2%;
     font-size: 250%;
     color: white ;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -90,7 +95,7 @@ h1 {
  justify-content: center;
  transition: all 2s;
 }
-img{
+.img-plant{
     display: block;
     border-radius: 100%;
 }
@@ -138,18 +143,18 @@ img{
     transition: all 1s;
 } 
 .calcular{
+    width: 30%;
     margin: 2%;
     padding: 1%;
-    background-color: white;
-    color: black;
-    width: 30%;
-    transition: all 1s;
     border:none;
+    border-radius:10px 10px 10px 10px;
+    color: white;
+    transition: all 1s;
     font-size: 120%;
 }
 .calcular:hover{
     background-color: rgb(0, 196, 59);
-    color: white;
+    color: blue;
     transition: all 1s;
     font-size: 150%;
 }
@@ -164,10 +169,63 @@ img{
 main{
     background-color:black;
     display:flex;
+    flex-wrap:wrap;
     width:100%;
-    margin: 0;
+    margin:2;
     color:white;
-.gif{
-    width:300px;
-    height:300px;
+    display:center;
 }
+.divOvnis{
+     flex-grow:1;
+     height:300px;
+     width:400px;/*minimo*/
+     max-width: 100%;/*Max*/
+     padding:2%;
+     margin-bottom:5%;
+ }
+
+.img-ovnis{
+    width: 100%;
+    height: 320px;
+}
+/*Nav*/
+ul{
+    margin-top:2%;
+    list-style-type: none;
+     text-align: center;
+}
+li{ 
+    display:inline-block;
+    margin:1%;
+}
+li  a{
+    display:block;
+    text-decoration: none;
+    color:white;
+    transition:all 1s;
+    font-size:1.5rem;
+}
+li a:hover {
+    transition:all 1s;
+    color:blue;
+}
+/*siguendo con el contenido*/
+.info-alien{
+    margin:2%;
+    flex-grow:1;
+    width:300px;
+}
+.info-alien h2,p{
+    font-family: 'Kanit', sans-serif;
+}
+/*btn of generation info*/
+.new-date{
+    padding:2%;
+    font-size:1rem;
+    font-weight: 600; 
+    color:white;
+    background-color:green;  
+    border:none;
+    border-radius:10px 10px 10px 10px;
+}
+

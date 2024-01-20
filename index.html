@@ -10,9 +10,18 @@
     <meta name="robots" content="index" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google fonst-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet">
+    <!--Boostrap-->
+    <link href="data/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="data/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--css native-->
     <link href="data/css/index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+</div>
     <div class="conteiner">        
         <div class="loader-wrapper">
              <div class="loader"></div>
@@ -31,23 +40,43 @@
             <h1>¿ Qué peso tendrías en cada planeta ?</h1>
             <div class="resultado"></div>
             <input type="text" placeholder="peso usuario" class="peso_usuario" maxlength="3">
+
+         <!--Mensajito-->
+         <div class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true" id="myToast">
+             <div class="d-flex"s>
+                 <div class="toast-body">No te olvides seguirnos en nuestras redes</div>
+                 <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+             </div>
+        </div>
             <br>
             <br> 
-            <button type="button"class="calcular">calcular</button>
+            <button type="button" class="calcular bg-success fw-bolder">calcular</button>
+            <br>
          </form>
+         <!--Mensajito-->
     </header>
+    <br>
+    <br>
     <main>
-        <!--add gif-->
-        <div class="gif"></div>
-        <section>
+        <div class="divOvnis">
+            <img src="/data/img/ovni.jpg" alt="Nave espacial" class="img-ovnis">
+        </div>
+        <section id="Ovnis" class="info-alien">
+            <nav>
+                <!--Anclar el contenido #lugar--> 
+                <ul>
+                    <li><a href="#Ovnis">Ovnis</a></li>
+                    <li><a href="#Planetas">Planetas</a></li>
+                    <li><a href="#Info">Info</a></li>
+                </ul>
+            </nav>
             <h2>¿ Quierés saber más ?</h2>
-            <p>Dato random de ovnis:</p>
-            <div class="random-data"></div>
-            <!--open ia-->
-            <button type="button" class="new-date">generar</button>
+            <p>Dentro de los informes clasificados sobre encuentros con ovnis, existe uno que describe luces intermitentes en el cielo, las cuales, según algunos testigos, responden a patrones de comunicación que aún no hemos logrado descifrar. Aterradora incertidumbre rodea la posibilidad de que haya mensajes desconocidos entre nosotros y ellos, justo encima de nuestras cabezas."🛸</p>
+            <button type="button" class="new-date">Generar</button>
         </section>
-    </main>
-    <!--Datos con chat gtp--->
+   </main>
+   <!--js native-->
     <script src="data/js/index.js" type="module"></script>
+    <script src="data/bootstrap/js/bootstrap.min.js"></script> 
 </body>
 </html>

@@ -10,24 +10,24 @@ function namePlanet(x){
 function next(){
     if(getsHtml.x < 7 ){
         getsHtml.x++
-        getsHtml.planet.innerHTML = '<img src=" ' + imgs[getsHtml.x] + '">';
+        getsHtml.planet.innerHTML = '<img src=" ' + imgs[getsHtml.x] + '" class="img-plant">';
         namePlanet(getsHtml.x)
     }
 }
 function back(){
     if(getsHtml.x > 0 ){
         getsHtml.x--
-        getsHtml.planet.innerHTML = '<img src=" ' + imgs[getsHtml.x] + '">';
+        getsHtml.planet.innerHTML = '<img src=" ' + imgs[getsHtml.x] + '" class="img-plant">';
         namePlanet(getsHtml.x)
     }
 }
 //calculo 
 function calculo(){
     if(getsHtml.pesoUsuario.value == 0){
-        getsHtml.result.innerHTML = '<p> Por favor escribe un número .</p>';
+        getsHtml.result.innerHTML = '<p> Por favor escribe un número.</p>';
     }else{   
         let cal =  getsHtml.pesoUsuario.value * pesoPlanet[getsHtml.x]; 
-        getsHtml.result.innerHTML = "<p> Tu peso en el planeta " + namePlan[getsHtml.x] + " sería: "+parseFloat(cal.toFixed(2))+" kg </p>";
+        isNaN(cal)? getsHtml.result.innerHTML = '<p> El valor introducido,no es un número.</p>' :getsHtml.result.innerHTML = '<p> Tu peso en el planeta ' + namePlan[getsHtml.x] + ' sería: ' +parseFloat(cal.toFixed(2))+ ' kg </p>';
     }
 }
 export { namePlanet, next, back, calculo};
