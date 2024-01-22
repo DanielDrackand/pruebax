@@ -1,10 +1,10 @@
 //Usaremos la ultima versión de javascript
-"use strict";
+'use strict';
 //importaciones
 //gets
 import {getsHtml,imgs,namePlan} from './getHtml/getsHtml.js';
 //lógica del funciones y btons
-import {namePlanet,next,back,calculo} from './logicPlant/logicPlant.js';
+import {namePlanet,next,back,calculo,showInfo} from './logicPlant/logicPlant.js';
 //animaciones 
 import {loaderAnimation,resultHide,toasShow} from './effect/effect.js';
 //loader
@@ -20,7 +20,7 @@ window.addEventListener('load',() => {
     getsHtml.btnNext.addEventListener('click',next)
     getsHtml.btnBack.addEventListener('click',back)
     getsHtml.calcular.addEventListener('click',calculo) 
-
+    showInfo();
 })
 
 

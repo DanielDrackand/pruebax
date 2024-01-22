@@ -23,7 +23,7 @@ function loaderAnimation(){
         getsHtml.conteiner.remove();//Una vez que ya finalizo el loader, lo iliminamos
         //body       
     },2000)//cuanto tardara en desaparecer el loader para que nos deje ocupar la página
-
+        
 }
 
 //El resultado solo se mostrará por unos segundos
@@ -39,4 +39,5 @@ function toasShow(){
         myToast.show();
     },3000);
 }
+//dato de planetas
 export{loaderAnimation,resultHide,toasShow};

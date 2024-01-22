@@ -1,5 +1,5 @@
 //getHtml lo necesitamos para cosas concretas
-import {getsHtml,imgs,namePlan,pesoPlanet} from './../getHtml/getsHtml.js';
+import {getsHtml,imgs,namePlan,pesoPlanet,infoPlanet} from './../getHtml/getsHtml.js';
 
 //usamos 'x' para saber que img de planeta mostrar
 //se pude solucionar con un array de planetas
@@ -30,7 +30,16 @@ function calculo(){
         isNaN(cal)? getsHtml.result.innerHTML = '<p> El valor introducido,no es un número.</p>' :getsHtml.result.innerHTML = '<p> Tu peso en el planeta ' + namePlan[getsHtml.x] + ' sería: ' +parseFloat(cal.toFixed(2))+ ' kg </p>';
     }
 }
-export { namePlanet, next, back, calculo};
+//incertaremos en el html luego en effec lo iremos cambiando 
+function showInfo(){
+    let cont = 0;
+    getsHtml.planetInfo.innerHTML = '<p>'+ infoPlanet[cont] +'</p>';
+    setInterval(()=> {
+        cont == 7 ? cont = 0 : cont++;
+        getsHtml.planetInfo.innerHTML = '<p>' + infoPlanet[cont] + '</p>';
+    },10000)
+}
+export { namePlanet, next, back, calculo,showInfo};
 
 
 
