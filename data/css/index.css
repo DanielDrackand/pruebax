@@ -88,7 +88,7 @@ h1 {
     margin:2%;
     font-size: 250%;
     color: white ;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Lemon', serif;
 }
 #planet{
  display: flex;
@@ -152,10 +152,11 @@ h1 {
     transition: all 1s;
     font-size: 120%;
 }
-.calcular:hover{
-    background-color: rgb(0, 196, 59);
-    transition: all 1s;
-    font-size: 150%;
+.calcular:hover {
+  box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
+  outline-color: rgba(49, 138, 172, 0);
+  outline-offset: 80px;
+  text-shadow: 1px 1px 6px #fff;
 }
 /*RESULTADO*/
 .resultado{
@@ -248,9 +249,45 @@ footer{
 }
 /*Redes*/
 /*Las img resultaron de distintas alturas asique mi en la obligacion de tocarlo por separado */
+/*Arregla el responsive guapo*/
 #icono{
     width:3%;
     height:3%;
+    transition:all 1s;
+}
+#icono:hover{
+    width:5%;
+    height:5%;
+    transition:all 1s;
+}
+.correo-icono:hover{
+    background-color:#FF3E38;
+    color:white;
+    border-radius:10px 10px 10px 10px;
+    border:solid white 3px;
+    transition:all 1s;
+}
+.linkedin-icono:hover{
+    background-color:#3880FF;
+    color:white;
+    border-radius:10px 10px 10px 10px;
+    border:solid white 3px;
+    transition:all 1s;
+}
+.instagram-icono:hover{
+    background-color:#FF3E38;
+    color:white;
+    border-radius:19px 19px 19px 19px;
+    border:solid white 3px;
+    transition:all 1s;
+}
+.facebook-icono:hover{
+    background-color:#3880FF;
+    color:white;
+    border-radius:10px 10px 10px 10px;
+    border:solid white 3px;
+    transition:all 1s;
+
 }
 footer ul { 
     list-style-type: none;
