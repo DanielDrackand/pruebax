@@ -251,14 +251,17 @@ footer{
 /*Las img resultaron de distintas alturas asique mi en la obligacion de tocarlo por separado */
 /*Arregla el responsive guapo*/
 #icono{
-    width:3%;
-    height:3%;
+    width:4%;
+    min-width:10px;
+    height:4%;
+    min-height:10px;
     transition:all 1s;
 }
 #icono:hover{
     width:5%;
     height:5%;
     transition:all 1s;
+    border:none;
 }
 .correo-icono:hover{
     background-color:#FF3E38;
