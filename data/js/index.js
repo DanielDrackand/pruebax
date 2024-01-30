@@ -12,7 +12,7 @@ window.addEventListener('load',() => {
     //animacion loader
     loaderAnimation();
     //img
-    getsHtml.planet.innerHTML = '<img src=" ' + imgs[0] + '" class="img-plant">';
+    getsHtml.planet.innerHTML = '<img src=" ' + imgs[0] + '" class="img-plant" alt="'+ namePlan[getsHtml.x]+'-img" >';
     namePlanet(getsHtml.x);       
     //bootstrap
     toasShow();

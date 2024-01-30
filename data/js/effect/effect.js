@@ -17,12 +17,12 @@ function loaderAnimation(){
     setTimeout(()=>{
         getsHtml.conteiner.style.opacity = 1; 
         getsHtml.conteiner.style.opacity = 0;
-    },1000)//duración del transitions
+    },400)//duración del transitions
     setTimeout(() => {
         getsHtml.conteiner.classList.remove('conteiner')
         getsHtml.conteiner.remove();//Una vez que ya finalizo el loader, lo iliminamos
         //body       
-    },2000)//cuanto tardara en desaparecer el loader para que nos deje ocupar la página
+    },600)//cuanto tardara en desaparecer el loader para que nos deje ocupar la página
         
 }
 
@@ -30,7 +30,7 @@ function loaderAnimation(){
 function resultHide(){
         getsHtml.result.innerHTML= "";
     }
-    setInterval(resultHide,6000);
+    setInterval(resultHide,600);
 
 //boostrap effec
 function toasShow(){

@@ -10,14 +10,15 @@ function namePlanet(x){
 function next(){
     if(getsHtml.x < 7 ){
         getsHtml.x++
-        getsHtml.planet.innerHTML = '<img src=" ' + imgs[getsHtml.x] + '" class="img-plant">';
+        getsHtml.planet.innerHTML = '<img src=" ' + imgs[getsHtml.x] + '" class="img-plant" alt="'+ namePlan[getsHtml.x]+'-img" >';
         namePlanet(getsHtml.x)
     }
 }
 function back(){
     if(getsHtml.x > 0 ){
         getsHtml.x--
-        getsHtml.planet.innerHTML = '<img src=" ' + imgs[getsHtml.x] + '" class="img-plant">';
+        getsHtml.planet.innerHTML = '<img src=" ' + imgs[getsHtml.x] + '" class="img-plant" alt="'+ namePlan[getsHtml.x]+'-img" >';
+        namePlanet(getsHtml.x)
         namePlanet(getsHtml.x)
     }
 }
