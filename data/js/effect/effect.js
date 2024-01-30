@@ -39,5 +39,4 @@ function toasShow(){
         myToast.show();
     },3000);
 }
-//dato de planetas
 export{loaderAnimation,resultHide,toasShow};

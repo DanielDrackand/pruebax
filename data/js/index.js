@@ -9,7 +9,7 @@ import {namePlanet,next,back,calculo,showInfo} from './logicPlant/logicPlant.js'
 import {loaderAnimation,resultHide,toasShow} from './effect/effect.js';
 //loader
 window.addEventListener('load',() => {
-    //animacion loader
+    //animation loader
     loaderAnimation();
     //img
     getsHtml.planet.innerHTML = '<img src=" ' + imgs[0] + '" class="img-plant" alt="'+ namePlan[getsHtml.x]+'-img" >';
